@@ -22,7 +22,7 @@ bot(
 		if (match.startsWith('y2mate;')) {
 			const [_, q, id] = match.split(';')
 			const result = await y2mate.dl(id, 'video', q)
-			await message.sendFromUrl(result)
+			return await message.sendFromUrl(result)
 		}
 		if (!ytIdRegex.test(match))
 			return await message.sendMessage('*Give me a yt link!*', {
