@@ -43,7 +43,8 @@ bot(
 		if (!match || match.startsWith('+'))
 			return await message.sendMessage('Example : add 91987654321')
 		match = match.split(' ').map((num) => numToJid(num))
-		await message.Add(match)
+		const res = await message.Add(match)
+		if (res == '403') return await message.sendMessage('_Failed, Invite sent_')
 	}
 )
 
