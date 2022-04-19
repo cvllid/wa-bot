@@ -2,7 +2,7 @@ const { pinterest, bot, isUrl } = require('../lib/')
 
 bot(
 	{
-		pattern: 'pinterest ?(.*)',
+		pattern: 'بينتيريست ?(.*)',
 		fromMe: true,
 		desc: 'Download pinterest video/image',
 		type: 'download',
