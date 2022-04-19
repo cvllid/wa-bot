@@ -11,7 +11,7 @@ const {
 
 bot(
 	{
-		pattern: 'welcome ?(.*)',
+		pattern: 'ترحيب ?(.*)',
 		fromMe: true,
 		desc: 'Welcome new members',
 		onlyGroup: true,
